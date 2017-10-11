@@ -8,8 +8,10 @@ import java.lang.ref.WeakReference;
 
 
 /**
+ * Project
  * Created by Alhazmy13 on 10/26/15.
  */
+@SuppressWarnings({"FieldCanBeLocal","unused"})
 public class VideoPicker {
 
 

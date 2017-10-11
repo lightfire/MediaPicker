@@ -1,12 +1,12 @@
 ext {
     versions = [
-            support            : '25.2.0',
+            support            : '26.1.0',
             retrofit           : '2.2.0',
-            BUILD_TOOLS_VERSION: '25.0.2',
+            BUILD_TOOLS_VERSION: '26.0.2',
             rxJava             : '2.0.1',
             rxAndroid          : '2.0.1',
             MIN_SDK_VERSION    : 14,
-            TARGET_SDK_VERSION : 25,
+            TARGET_SDK_VERSION : 26,
             LIBRARY_VERSION    : '2.3.2'
     ]
     supportDeps = [

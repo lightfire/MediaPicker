@@ -25,10 +25,12 @@ class VideoProcessing {
         List<String> listOfImgs = new ArrayList<>();
         if ((Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) && (null == data.getData())) {
             ClipData clipdata = data.getClipData();
-            for (int i = 0; i < clipdata.getItemCount(); i++) {
-                Uri selectedImage = clipdata.getItemAt(i).getUri();
-                String selectedImagePath = FileProcessing.getPath(context, selectedImage);
-                listOfImgs.add(selectedImagePath);
+            if (clipdata != null) {
+                for (int i = 0; i < clipdata.getItemCount(); i++) {
+                    Uri selectedImage = clipdata.getItemAt(i).getUri();
+                    String selectedImagePath = FileProcessing.getPath(context, selectedImage);
+                    listOfImgs.add(selectedImagePath);
+                }
             }
         }
         return listOfImgs;

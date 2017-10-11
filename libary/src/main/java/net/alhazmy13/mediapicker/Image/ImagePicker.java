@@ -12,6 +12,7 @@ import java.lang.ref.WeakReference;
  * Created by Alhazmy13 on 10/26/15.
  * MediaPicker
  */
+@SuppressWarnings({"FieldCanBeLocal", "WeakerAccess"})
 public class ImagePicker {
 
     public static final int IMAGE_PICKER_REQUEST_CODE = 42141;

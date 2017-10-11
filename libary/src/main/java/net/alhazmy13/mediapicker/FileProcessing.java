@@ -174,9 +174,9 @@ public class FileProcessing {
                 }
 
                 String[] children = sourceLocation.list();
-                for (int i = 0; i < children.length; i++) {
-                    copyDirectory(new File(sourceLocation, children[i]),
-                            new File(targetLocation, children[i]));
+                for (String aChildren : children) {
+                    copyDirectory(new File(sourceLocation, aChildren),
+                            new File(targetLocation, aChildren));
                 }
             } else {
 
@@ -192,6 +192,8 @@ public class FileProcessing {
                 in.close();
                 out.close();
             }
-        }catch (Exception ex){}
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 }
